@@ -55,5 +55,8 @@ mkShell {
     # Prevent the avr-gcc wrapper from picking up host GCC flags
     # like -iframework, which is problematic on Darwin
     unset NIX_CFLAGS_COMPILE_FOR_TARGET
+
+    # Custom keymap paths for convenience
+    export ASTRAL48=keyboards/keebio/levinson/keymaps/astral48
   '';
 }
